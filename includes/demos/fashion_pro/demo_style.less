@@ -1,0 +1,111 @@
+@import "../../less_files/variables.less";
+
+/*
+Fashion Pro Demo
+*/
+
+.td-fashion-pro {
+
+
+  //hover effect
+  .td-background-blend {
+
+    .td_module_wrap .entry-thumb {
+      transition: background-color 0.3s ease;
+    }
+
+    .td_module_wrap:hover {
+      .entry-thumb {
+        background-color: #bd00ff;
+        background-blend-mode: overlay;
+
+      }
+    }
+  }
+
+
+  //live search border
+
+  .tdb-aj-search .result-msg {
+    border: 2px solid black;
+  }
+
+
+
+  /*
+  Caption CSS
+  */
+
+  .wp-caption {
+    position: relative;
+
+    .wp-caption-text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -180px;
+      text-align: left;
+      width: 250px;
+      padding: 20px;
+      background-color: #fff;
+      border-left: solid 10px rgba(189, 0, 255, 0.56);
+
+      //responsive landscape tablet
+      @media (min-width: @responsive_l_tablet_min) and (max-width: @responsive_l_tablet_max) {
+        left: -140px;
+      }
+
+      //responsive landscape tablet
+      @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+        left: -70px;
+      }
+
+      @media (max-width: @responsive_p_phone_max) {
+        top: auto;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+      }
+    }
+  }
+
+
+  // arrows middle loop
+  .tdb_loop .td-next-prev-wrap {
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // demos button
+  #td-theme-settings .td-skin-buy a {
+    background-color: #9f1fcc;
+  }
+
+
+
+
+}
