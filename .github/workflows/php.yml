@@ -1,4 +1,4 @@
-name: index.php
+name: index
 on:
   push:
     branches: [ main ]
